@@ -1,26 +1,26 @@
 class Sympozium < Formula
   desc "Kubernetes-native AI agent orchestration platform CLI"
   homepage "https://github.com/sympozium-ai/sympozium"
-  version "0.10.80"
+  version "0.10.81"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/sympozium-ai/sympozium/releases/download/v#{version}/sympozium-darwin-arm64.tar.gz"
-      sha256 "88f133e61ad2962a49d6e726d7ee7cace1a959fc5b6d080ae4f1de34b1791548"
+      sha256 "c922d8baa46190c1441bdfe3bfd768e109255425784e776364f0b48501a1e102"
     else
       url "https://github.com/sympozium-ai/sympozium/releases/download/v#{version}/sympozium-darwin-amd64.tar.gz"
-      sha256 "cf13f553b52093b4a9937a4279495e5305f149ef40c5fdf3cf9ce28bda8457da"
+      sha256 "f9538cc9e9d17807899f8b32ba6f0bc097edf3477af8092683ddb53536a29894"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/sympozium-ai/sympozium/releases/download/v#{version}/sympozium-linux-arm64.tar.gz"
-      sha256 "bf8cb170e5951cc11dd1e8cb8e1901281c05f25de96deaa479b183531cdedfd1"
+      sha256 "615451123a5c57b0e26d51ca569789a1a3ad1e689694d50a1cf200b7ed9390c5"
     else
       url "https://github.com/sympozium-ai/sympozium/releases/download/v#{version}/sympozium-linux-amd64.tar.gz"
-      sha256 "8fc3c0efcf93d38daad19c3303fbfb0700a5acbaae4b1e6214fa775a34392a7e"
+      sha256 "2a759f2e36db349c3c94b6de38bc0f1a73d3b55f562bb6f98c1dcc047da65802"
     end
   end
 
